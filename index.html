@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amrit Kashyap — Full Stack Developer | Portfolio</title>
+    <meta name="description" content="Amrit Kashyap — CSE student and Full Stack Developer specializing in MERN Stack, AI/ML, and scalable web applications.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cursor Glow Effect -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>AK<span class="logo-bracket">/&gt;</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#internships" class="nav-link">Internships</a></li>
+                <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </button>
+                <a href="https://github.com/amritupadhyay45" target="_blank" rel="noopener noreferrer" class="nav-github">
+                    <i class="fab fa-github"></i>
+                </a>
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-grid"></div>
+        <div class="hero-particles" id="heroParticles"></div>
+        <div class="hero-content">
+            <div class="hero-badge animate-fade-in">
+                <span class="badge-dot"></span>
+                BASED IN KATRA, JAMMU & KASHMIR, INDIA
+            </div>
+            <h1 class="hero-title animate-fade-in-up">
+                Full Stack Developer<br>
+                <span class="gradient-text">&amp; ML Enthusiast</span>
+            </h1>
+            <p class="hero-subtitle animate-fade-in-up delay-1">
+                I'm Amrit Kashyap — a <strong>Computer Science student</strong> and <strong>full-stack developer</strong> 
+                at SMVDU. I build <a href="#projects">modern web applications</a> and 
+                <a href="#projects">AI-powered solutions</a> using the MERN stack and machine learning.
+            </p>
+            <div class="hero-cta animate-fade-in-up delay-2">
+                <a href="#projects" class="btn btn-primary">
+                    <span>See My Projects</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#contact" class="btn btn-outline">
+                    <span>Get In Touch</span>
+                    <i class="fas fa-paper-plane"></i>
+                </a>
+            </div>
+            <div class="hero-stats animate-fade-in-up delay-3">
+                <div class="stat-item">
+                    <span class="stat-icon"><i class="fas fa-code"></i></span>
+                    <span class="stat-number" data-count="6">0</span>+
+                    <span class="stat-label">Projects</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-icon"><i class="fas fa-laptop-code"></i></span>
+                    <span class="stat-number" data-count="1000">0</span>+
+                    <span class="stat-label">Hours Coded</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-icon"><i class="fas fa-trophy"></i></span>
+                    <span class="stat-number" data-count="7">0</span>+
+                    <span class="stat-label">Achievements</span>
+                </div>
+            </div>
+        </div>
+        <a href="#about" class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </a>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">About Me</span>
+                <h2 class="section-title">Hi, I'm <span class="gradient-text">Amrit Kashyap</span></h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-image reveal-left">
+                    <div class="image-wrapper">
+                        <img src="/assets/passportimg.jpg" alt="Amrit Kashyap" class="about-photo">
+                        <div class="image-border"></div>
+                    </div>
+                    <div class="about-floating-card card-1">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>B.Tech CSE</span>
+                    </div>
+                    <div class="about-floating-card card-2">
+                        <i class="fas fa-university"></i>
+                        <span>SMVDU</span>
+                    </div>
+                </div>
+                <div class="about-content reveal-right">
+                    <p>
+                        A <strong>Computer Science Engineering student</strong> with a strong foundation in 
+                        <strong>Web Development</strong> and <strong>Machine Learning</strong>. Currently pursuing 
+                        B.Tech at <strong>Shri Mata Vaishno Devi University</strong>, Katra with a CGPA of 7.16.
+                    </p>
+                    <p>
+                        Experienced in building full-stack applications using the <strong>MERN stack</strong> and 
+                        developing ML-based solutions. Certified in <strong>Oracle Cloud Infrastructure (OCI)</strong> 
+                        with a keen interest in AI and real-world problem solving.
+                    </p>
+                    <p>
+                        Passionate about learning, building <strong>scalable systems</strong>, and contributing to 
+                        impactful projects. I love turning complex problems into simple, beautiful, and intuitive solutions.
+                    </p>
+                    <div class="about-info-grid">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <span class="info-label">Location</span>
+                                <span class="info-value">Katra, J&K, India</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <span class="info-label">Education</span>
+                                <span class="info-value">B.Tech CSE, SMVDU</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-calendar-alt"></i>
+                            <div>
+                                <span class="info-label">Graduation</span>
+                                <span class="info-value">Expected May 2027</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-chart-line"></i>
+                            <div>
+                                <span class="info-label">CGPA</span>
+                                <span class="info-value">7.16</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-primary">
+                        <span>Let's Collaborate</span>
+                        <i class="fas fa-handshake"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section section-alt" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">My Skills</span>
+                <h2 class="section-title">Technologies & <span class="gradient-text">Expertise</span></h2>
+                <p class="section-subtitle">I specialize in full-stack web development, AI/ML, and building scalable digital solutions using modern frameworks and tools.</p>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Frontend -->
+                <div class="skill-card reveal-up">
+                    <div class="skill-card-header">
+                        <div class="skill-icon frontend-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3>Frontend</h3>
+                    </div>
+                    <div class="skill-bars">
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-info">
+                                <span>HTML/CSS</span><span>90%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-bar-fill" data-width="90"></div></div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-info">
+                                <span>JavaScript</span><span>85%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-bar-fill" data-width="85"></div></div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-info">
+                                <span>React</span><span>80%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-bar-fill" data-width="80"></div></div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-info">
+                                <span>Tailwind CSS</span><span>75%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-bar-fill" data-width="75"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend -->
+                <div class="skill-card reveal-up delay-1">
+                    <div class="skill-card-header">
+                        <div class="skill-icon backend-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3>Backend</h3>
+                    </div>
+                    <div class="skill-bars">
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-info">
+                                <span>Node.js</span><span>80%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-bar-fill" data-width="80"></div></div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-info">
+                                <span>Express.js</span><span>78%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-bar-fill" data-width="78"></div></div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-info">
+                                <span>MongoDB</span><span>75%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-bar-fill" data-width="75"></div></div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-info">
+                                <span>Python / Flask</span><span>70%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-bar-fill" data-width="70"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI/ML -->
+                <div class="skill-card reveal-up delay-2">
+                    <div class="skill-card-header">
+                        <div class="skill-icon ml-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>AI / ML</h3>
+                    </div>
+                    <div class="skill-bars">
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-info">
+                                <span>Python</span><span>80%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-bar-fill" data-width="80"></div></div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-info">
+                                <span>Scikit-learn</span><span>70%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-bar-fill" data-width="70"></div></div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-info">
+                                <span>TensorFlow</span><span>60%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-bar-fill" data-width="60"></div></div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-info">
+                                <span>PyTorch</span><span>55%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-bar-fill" data-width="55"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools -->
+                <div class="skill-card reveal-up delay-3">
+                    <div class="skill-card-header">
+                        <div class="skill-icon tools-icon">
+                            <i class="fas fa-wrench"></i>
+                        </div>
+                        <h3>Tools & Cloud</h3>
+                    </div>
+                    <div class="skill-bars">
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-info">
+                                <span>Git & GitHub</span><span>85%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-bar-fill" data-width="85"></div></div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-info">
+                                <span>VS Code</span><span>90%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-bar-fill" data-width="90"></div></div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-info">
+                                <span>AWS / Firebase</span><span>60%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-bar-fill" data-width="60"></div></div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-info">
+                                <span>Power BI</span><span>65%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-bar-fill" data-width="65"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tech Icons -->
+            <div class="tech-icons reveal-up">
+                <h3>Technologies I Work With</h3>
+                <div class="tech-icons-grid">
+                    <div class="tech-icon-item" title="JavaScript">
+                        <i class="fab fa-js-square"></i>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="tech-icon-item" title="React">
+                        <i class="fab fa-react"></i>
+                        <span>React</span>
+                    </div>
+                    <div class="tech-icon-item" title="Node.js">
+                        <i class="fab fa-node-js"></i>
+                        <span>Node.js</span>
+                    </div>
+                    <div class="tech-icon-item" title="Python">
+                        <i class="fab fa-python"></i>
+                        <span>Python</span>
+                    </div>
+                    <div class="tech-icon-item" title="Java">
+                        <i class="fab fa-java"></i>
+                        <span>Java</span>
+                    </div>
+                    <div class="tech-icon-item" title="Git">
+                        <i class="fab fa-git-alt"></i>
+                        <span>Git</span>
+                    </div>
+                    <div class="tech-icon-item" title="AWS">
+                        <i class="fab fa-aws"></i>
+                        <span>AWS</span>
+                    </div>
+                    <div class="tech-icon-item" title="Linux">
+                        <i class="fab fa-linux"></i>
+                        <span>Linux</span>
+                    </div>
+                    <div class="tech-icon-item" title="HTML5">
+                        <i class="fab fa-html5"></i>
+                        <span>HTML5</span>
+                    </div>
+                    <div class="tech-icon-item" title="CSS3">
+                        <i class="fab fa-css3-alt"></i>
+                        <span>CSS3</span>
+                    </div>
+                    <div class="tech-icon-item" title="Database">
+                        <i class="fas fa-database"></i>
+                        <span>MongoDB</span>
+                    </div>
+                    <div class="tech-icon-item" title="TypeScript">
+                        <i class="fas fa-code"></i>
+                        <span>TypeScript</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">My Projects</span>
+                <h2 class="section-title">Featured <span class="gradient-text">Work</span></h2>
+                <p class="section-subtitle">Explore my full-stack, AI/ML, and web development projects showcasing real-world problem solving.</p>
+            </div>
+
+            <!-- Project Filters -->
+            <div class="project-filters reveal-up">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="ml">AI/ML</button>
+                <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1: Student Grievance Portal -->
+                <div class="project-card reveal-up" data-category="web fullstack">
+                    <div class="project-image">
+                        <div class="project-image-placeholder gradient-1">
+                            <i class="fas fa-clipboard-list"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://student-grievance-portal-frontend.onrender.com/" target="_blank" rel="noopener noreferrer" class="project-link" title="Live Demo">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="https://github.com/amritupadhyay45/Student_Grievance_Portal" target="_blank" rel="noopener noreferrer" class="project-link" title="Source Code">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Student Grievance Portal</h3>
+                        <p>A web-based platform for students to submit complaints, feedback, and maintenance requests. Features real-time status tracking, automated notifications, and role-based access control.</p>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                            <span>Express</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: E-commerce Website -->
+                <div class="project-card reveal-up" data-category="web fullstack">
+                    <div class="project-image">
+                        <div class="project-image-placeholder gradient-2">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://github.com/amritupadhyay45/E_commerce_website" target="_blank" rel="noopener noreferrer" class="project-link" title="Source Code">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Satvik Electricals E-Commerce</h3>
+                        <p>Full-stack e-commerce website for an electrical and electronics store with product listings, user authentication, cart management, admin controls, and responsive design.</p>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                            <span>Tailwind CSS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: QuizGo -->
+                <div class="project-card reveal-up" data-category="web fullstack">
+                    <div class="project-image">
+                        <div class="project-image-placeholder gradient-3">
+                            <i class="fas fa-question-circle"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://github.com/amritupadhyay45/Quizgo" target="_blank" rel="noopener noreferrer" class="project-link" title="Source Code">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>QuizMaster — Secure Quiz App</h3>
+                        <p>Cross-platform Electron quiz application with secure kiosk mode, anti-screenshot protection, teacher quiz authoring, auto-grading, and student quiz taking with real-time timers.</p>
+                        <div class="project-tags">
+                            <span>TypeScript</span>
+                            <span>React</span>
+                            <span>Electron</span>
+                            <span>Supabase</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: ChatBot -->
+                <div class="project-card reveal-up" data-category="web ml">
+                    <div class="project-image">
+                        <div class="project-image-placeholder gradient-4">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://github.com/amritupadhyay45/ChatBot_project" target="_blank" rel="noopener noreferrer" class="project-link" title="Source Code">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>AI ChatBot — Gemini Powered</h3>
+                        <p>Intelligent chatbot built with Flask backend, Streamlit frontend, and MongoDB for conversation storage. Integrates Google Gemini API for AI-powered responses.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Flask</span>
+                            <span>Streamlit</span>
+                            <span>Gemini AI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5: Smart Fall Detection -->
+                <div class="project-card reveal-up" data-category="ml">
+                    <div class="project-image">
+                        <div class="project-image-placeholder gradient-5">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://github.com/amritupadhyay45" target="_blank" rel="noopener noreferrer" class="project-link" title="GitHub Profile">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Smart Fall Detection System</h3>
+                        <p>Machine learning–based system to detect accidental human falls using motion sensor data. Classifies normal activities vs falls for real-time alerts and immediate assistance.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>ML</span>
+                            <span>Sensor Data</span>
+                            <span>Classification</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Internships Section -->
+    <section class="section section-alt" id="internships">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Experience</span>
+                <h2 class="section-title">My <span class="gradient-text">Internships</span></h2>
+                <p class="section-subtitle">Hands-on industry experience gained through internships in web development, HR tech, and cybersecurity.</p>
+            </div>
+            <div class="internships-grid">
+                <!-- Internship 1: InternPe -->
+                <div class="internship-card reveal-up" onclick="openCertModal('/certificates/interpe.png')">
+                    <div class="internship-icon teal">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="internship-content">
+                        <h3>Web Development Intern</h3>
+                        <span class="internship-company">InternPe</span>
+                        <p>Worked on front-end and back-end web development projects. Built responsive UI components, implemented REST APIs, and gained hands-on experience with modern JavaScript frameworks and deployment workflows.</p>
+                        <div class="internship-tags">
+                            <span>HTML/CSS</span>
+                            <span>JavaScript</span>
+                            <span>React</span>
+                            <span>Node.js</span>
+                        </div>
+                    </div>
+                    <div class="internship-view-cert">
+                        <i class="fas fa-certificate"></i> View Certificate
+                    </div>
+                </div>
+
+                <!-- Internship 2: PeopleXM -->
+                <div class="internship-card reveal-up delay-1" onclick="openCertModal('certificates/peoplexm.jpg')">
+                    <div class="internship-icon purple">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="internship-content">
+                        <h3>Software Intern</h3>
+                        <span class="internship-company">PeopleXM</span>
+                        <p>Contributed to HR-tech product development, working on employee experience and feedback platforms. Assisted in building dashboard features, data visualization modules, and integrating analytics tools.</p>
+                        <div class="internship-tags">
+                            <span>Full Stack</span>
+                            <span>Analytics</span>
+                            <span>Dashboard</span>
+                            <span>HR Tech</span>
+                        </div>
+                    </div>
+                    <div class="internship-view-cert">
+                        <i class="fas fa-certificate"></i> View Certificate
+                    </div>
+                </div>
+
+                <!-- Internship 3: CDAC Noida -->
+                <div class="internship-card reveal-up delay-2" onclick="openCertModal('certificates/CDAC.jpg')">
+                    <div class="internship-icon red">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="internship-content">
+                        <h3>Ethical Hacking & Cybersecurity Intern</h3>
+                        <span class="internship-company">C-DAC Noida</span>
+                        <p>Completed a virtual internship focused on ethical hacking and penetration testing. Gained hands-on experience with vulnerability assessment, network security tools, and cybersecurity best practices.</p>
+                        <div class="internship-tags">
+                            <span>Ethical Hacking</span>
+                            <span>Pen Testing</span>
+                            <span>Network Security</span>
+                            <span>Cybersecurity</span>
+                        </div>
+                    </div>
+                    <div class="internship-view-cert">
+                        <i class="fas fa-certificate"></i> View Certificate
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="section" id="achievements">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Achievements</span>
+                <h2 class="section-title">Awards & <span class="gradient-text">Certifications</span></h2>
+            </div>
+            <div class="achievements-grid">
+                <div class="achievement-card reveal-up clickable" onclick="openCertModal('certificates/Hack2skill-Certificate.png')">
+                    <div class="achievement-icon blue">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>ISRO Antariksh Hackathon 2025</h3>
+                    <p>Participated in the prestigious ISRO Bharatiya Antariksh Hackathon 2025, tackling space technology challenges.</p>
+                    <span class="achievement-tag">National Level</span>
+                    <div class="achievement-view-cert"><i class="fas fa-certificate"></i> View Certificate</div>
+                </div>
+                <div class="achievement-card reveal-up delay-1 clickable" onclick="openCertModal('/certificates/DATA_SCIENCE.jpg')">
+                    <div class="achievement-icon purple">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>OCI 2025 — Data Science Professional</h3>
+                    <p>Earned Oracle Cloud Infrastructure certification as a Data Science Professional, demonstrating cloud and AI expertise.</p>
+                    <span class="achievement-tag">Certification</span>
+                    <div class="achievement-view-cert"><i class="fas fa-certificate"></i> View Certificate</div>
+                </div>
+                <div class="achievement-card reveal-up delay-2 clickable" onclick="openCertModal('/certificates/AI_FOUNDATION.jpg')">
+                    <div class="achievement-icon orange">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>OCI 2025 — AI Foundations Associate</h3>
+                    <p>Oracle Cloud Infrastructure Certified AI Foundations Associate, validating expertise in AI/ML concepts and OCI AI services.</p>
+                    <span class="achievement-tag">Certification</span>
+                    <div class="achievement-view-cert"><i class="fas fa-certificate"></i> View Certificate</div>
+                </div>
+                <div class="achievement-card reveal-up clickable" onclick="openCertModal('/certificates/MY_SQL.jpg')">
+                    <div class="achievement-icon cyan">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>MySQL HeatWave — Certified Associate</h3>
+                    <p>MySQL HeatWave Implementation Certified Associate, demonstrating proficiency in MySQL cloud database and analytics.</p>
+                    <span class="achievement-tag">Certification</span>
+                    <div class="achievement-view-cert"><i class="fas fa-certificate"></i> View Certificate</div>
+                </div>
+                <div class="achievement-card reveal-up delay-1 clickable" onclick="openCertModal('certificates/_linux%20certificate.jpg')">
+                    <div class="achievement-icon green">
+                        <i class="fab fa-linux"></i>
+                    </div>
+                    <h3>Linux CLI Basics</h3>
+                    <p>Completed Linux Command Line Basics certification, gaining proficiency in shell scripting, file management, process handling, and essential Linux system administration commands.</p>
+                    <span class="achievement-tag">Certification</span>
+                    <div class="achievement-view-cert"><i class="fas fa-certificate"></i> View Certificate</div>
+                </div>
+                <div class="achievement-card reveal-up delay-2 clickable" onclick="openCertModal('certificates/outskill_certificate.jpg')">
+                    <div class="achievement-icon gold">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Generative AI Mastermind — Outskill</h3>
+                    <p>Completed the Generative AI Mastermind program by Outskill, exploring prompt engineering, LLM architectures, and real-world applications of generative AI technologies.</p>
+                    <span class="achievement-tag">Certification</span>
+                    <div class="achievement-view-cert"><i class="fas fa-certificate"></i> View Certificate</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get In Touch</span>
+                <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+                <p class="section-subtitle">Have a project idea or want to collaborate? Feel free to reach out through any of the channels below.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info reveal-left">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:amritkashyap3680@gmail.com">amritkashyap3680@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4>Phone</h4>
+                            <a href="tel:+917371890326">+91 7371890326</a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>SMVDU, Katra, Jammu & Kashmir, India</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-socials">
+                        <a href="https://github.com/amritupadhyay45" target="_blank" rel="noopener noreferrer" title="GitHub" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/amrit-kashyap-b36b1228a" target="_blank" rel="noopener noreferrer" title="LinkedIn" class="social-link">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="mailto:amritkashyap3680@gmail.com" title="Email" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <form class="contact-form reveal-right" id="contactForm" action="https://formspree.io/f/your-form-id" method="POST">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required placeholder="John Doe" autocomplete="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" required placeholder="john@example.com" autocomplete="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required placeholder="Project Collaboration">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Tell me about your project..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>AK<span class="logo-bracket">/&gt;</span>
+                </div>
+                <p class="footer-text">
+                    Amrit Kashyap — Full Stack Developer & ML Enthusiast from SMVDU, Katra. Building modern web applications and AI-powered solutions.
+                </p>
+                <div class="footer-links">
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#internships">Internships</a>
+                    <a href="#achievements">Achievements</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-socials">
+                    <a href="https://github.com/amritupadhyay45" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/amrit-kashyap-b36b1228a" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:amritkashyap3680@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+                <p class="footer-copyright">
+                    &copy; 2026 Amrit Kashyap. All rights reserved. | Built with <span class="heart">&hearts;</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Certificate Modal -->
+    <div class="cert-modal-overlay" id="certModal" onclick="closeCertModal(event)">
+        <div class="cert-modal">
+            <button class="cert-modal-close" onclick="closeCertModal(event)" aria-label="Close">&times;</button>
+            <img id="certModalImg" src="" alt="Certificate">
+        </div>
+    </div>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
