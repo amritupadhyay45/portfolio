@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects — Amrit Kashyap | Full Stack Developer</title>
+    <meta name="description" content="Explore Amrit Kashyap's full-stack web applications, AI/ML projects, and innovative solutions.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cursor Glow Effect -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>AK<span class="logo-bracket">/&gt;</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="about.html" class="nav-link" data-page="about">About</a></li>
+                <li><a href="skills.html" class="nav-link" data-page="skills">Skills</a></li>
+                <li><a href="projects.html" class="nav-link" data-page="projects">Projects</a></li>
+                <li><a href="internships.html" class="nav-link" data-page="internships">Internships</a></li>
+                <li><a href="achievements.html" class="nav-link" data-page="achievements">Achievements</a></li>
+                <li><a href="contact.html" class="nav-link" data-page="contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </button>
+                <a href="https://github.com/amritupadhyay45" target="_blank" rel="noopener noreferrer" class="nav-github">
+                    <i class="fab fa-github"></i>
+                </a>
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Projects Section -->
+    <section class="section page-content" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">My Projects</span>
+                <h2 class="section-title">Featured <span class="gradient-text">Work</span></h2>
+                <p class="section-subtitle">Explore my full-stack, AI/ML, and web development projects showcasing real-world problem solving.</p>
+            </div>
+
+            <!-- Project Filters -->
+            <div class="project-filters reveal-up">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="ml">AI/ML</button>
+                <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1: Student Grievance Portal -->
+                <div class="project-card reveal-up" data-category="web fullstack">
+                    <div class="project-image">
+                        <div class="project-image-placeholder gradient-1">
+                            <i class="fas fa-clipboard-list"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://student-grievance-portal-frontend.onrender.com/" target="_blank" rel="noopener noreferrer" class="project-link" title="Live Demo">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="https://github.com/amritupadhyay45/Student_Grievance_Portal" target="_blank" rel="noopener noreferrer" class="project-link" title="Source Code">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Student Grievance Portal</h3>
+                        <p>A web-based platform for students to submit complaints, feedback, and maintenance requests. Features real-time status tracking, automated notifications, and role-based access control.</p>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                            <span>Express</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: E-commerce Website -->
+                <div class="project-card reveal-up" data-category="web fullstack">
+                    <div class="project-image">
+                        <div class="project-image-placeholder gradient-2">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://github.com/amritupadhyay45/E_commerce_website" target="_blank" rel="noopener noreferrer" class="project-link" title="Source Code">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Satvik Electricals E-Commerce</h3>
+                        <p>Full-stack e-commerce website for an electrical and electronics store with product listings, user authentication, cart management, admin controls, and responsive design.</p>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                            <span>Tailwind CSS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: QuizGo -->
+                <div class="project-card reveal-up" data-category="web fullstack">
+                    <div class="project-image">
+                        <div class="project-image-placeholder gradient-3">
+                            <i class="fas fa-question-circle"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://github.com/amritupadhyay45/Quizgo" target="_blank" rel="noopener noreferrer" class="project-link" title="Source Code">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>QuizMaster — Secure Quiz App</h3>
+                        <p>Cross-platform Electron quiz application with secure kiosk mode, anti-screenshot protection, teacher quiz authoring, auto-grading, and student quiz taking with real-time timers.</p>
+                        <div class="project-tags">
+                            <span>TypeScript</span>
+                            <span>React</span>
+                            <span>Electron</span>
+                            <span>Supabase</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: ChatBot -->
+                <div class="project-card reveal-up" data-category="web ml">
+                    <div class="project-image">
+                        <div class="project-image-placeholder gradient-4">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://github.com/amritupadhyay45/ChatBot_project" target="_blank" rel="noopener noreferrer" class="project-link" title="Source Code">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>AI ChatBot — Gemini Powered</h3>
+                        <p>Intelligent chatbot built with Flask backend, Streamlit frontend, and MongoDB for conversation storage. Integrates Google Gemini API for AI-powered responses.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Flask</span>
+                            <span>Streamlit</span>
+                            <span>Gemini AI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5: Smart Fall Detection -->
+                <div class="project-card reveal-up" data-category="ml">
+                    <div class="project-image">
+                        <div class="project-image-placeholder gradient-5">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://github.com/amritupadhyay45" target="_blank" rel="noopener noreferrer" class="project-link" title="GitHub Profile">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Smart Fall Detection System</h3>
+                        <p>Machine learning–based system to detect accidental human falls using motion sensor data. Classifies normal activities vs falls for real-time alerts and immediate assistance.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>ML</span>
+                            <span>Sensor Data</span>
+                            <span>Classification</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>AK<span class="logo-bracket">/&gt;</span>
+                </div>
+                <p class="footer-text">
+                    Amrit Kashyap — Full Stack Developer & ML Enthusiast from SMVDU, Katra. Building modern web applications and AI-powered solutions.
+                </p>
+                <div class="footer-links">
+                    <a href="about.html">About</a>
+                    <a href="skills.html">Skills</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="internships.html">Internships</a>
+                    <a href="achievements.html">Achievements</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-socials">
+                    <a href="https://github.com/amritupadhyay45" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/amrit-kashyap-b36b1228a" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:amritkashyap3680@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+                <p class="footer-copyright">
+                    &copy; 2026 Amrit Kashyap. All rights reserved. | Built with <span class="heart">&hearts;</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Certificate Modal -->
+    <div class="cert-modal-overlay" id="certModal" onclick="closeCertModal(event)">
+        <div class="cert-modal">
+            <button class="cert-modal-close" onclick="closeCertModal(event)" aria-label="Close">&times;</button>
+            <img id="certModalImg" src="" alt="Certificate">
+        </div>
+    </div>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -11,12 +11,56 @@ document.addEventListener('DOMContentLoaded', () => {
     const savedTheme = localStorage.getItem('portfolio-theme') || 'dark';
     html.setAttribute('data-theme', savedTheme);
 
-    themeToggle.addEventListener('click', () => {
-        const current = html.getAttribute('data-theme');
-        const next = current === 'dark' ? 'light' : 'dark';
-        html.setAttribute('data-theme', next);
-        localStorage.setItem('portfolio-theme', next);
+    if (themeToggle) {
+        themeToggle.addEventListener('click', () => {
+            const current = html.getAttribute('data-theme');
+            const next = current === 'dark' ? 'light' : 'dark';
+            html.setAttribute('data-theme', next);
+            localStorage.setItem('portfolio-theme', next);
+        });
+    }
+
+    // ---- Mobile Navigation ----
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+
+    if (hamburger && navLinks) {
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+        // Close mobile nav on link click
+        navLinks.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+        });
+    }
+
+    // ---- Set Active Nav Link ----
+    const currentPage = window.location.pathname.split('/').pop().replace('.html', '') || 'index';
+    const allNavLinks = document.querySelectorAll('.nav-link');
+    
+    allNavLinks.forEach(link => {
+        const linkPage = link.getAttribute('data-page');
+        if (linkPage === currentPage || (currentPage === 'index' && !linkPage)) {
+            link.classList.add('active');
+        }
     });
+
+    // ---- Navbar Scroll Effect ----
+    const navbar = document.getElementById('navbar');
+    if (navbar) {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    }
 
     // ---- Cursor Glow ----
     const cursorGlow = document.getElementById('cursorGlow');
@@ -43,70 +87,32 @@ document.addEventListener('DOMContentLoaded', () => {
         cursorGlow.style.display = 'none';
     }
 
-    // ---- Mobile Navigation ----
-    const hamburger = document.getElementById('hamburger');
-    const navLinks = document.getElementById('navLinks');
-
-    hamburger.addEventListener('click', () => {
-        hamburger.classList.toggle('active');
-        navLinks.classList.toggle('active');
-    });
-
-    // Close mobile nav on link click
-    navLinks.querySelectorAll('.nav-link').forEach(link => {
-        link.addEventListener('click', () => {
-            hamburger.classList.remove('active');
-            navLinks.classList.remove('active');
-        });
-    });
-
-    // ---- Navbar Scroll Effect ----
-    const navbar = document.getElementById('navbar');
+    // ---- Back to Top Button ----
     const backToTop = document.getElementById('backToTop');
 
     window.addEventListener('scroll', () => {
         const scrollY = window.scrollY;
 
-        // Navbar
-        if (scrollY > 50) {
-            navbar.classList.add('scrolled');
-        } else {
-            navbar.classList.remove('scrolled');
-        }
-
+        // Navbar (handled by loader.js now)
         // Back to top
         if (scrollY > 500) {
             backToTop.classList.add('visible');
         } else {
             backToTop.classList.remove('visible');
         }
-
-        // Active nav link
-        updateActiveNavLink();
     });
 
-    backToTop.addEventListener('click', () => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
+    if (backToTop) {
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    }
 
     // ---- Active Nav Link ----
+    // Note: Active nav link is now handled by loader.js for multi-page navigation
     function updateActiveNavLink() {
-        const sections = document.querySelectorAll('section[id]');
-        const scrollPos = window.scrollY + 150;
-
-        sections.forEach(section => {
-            const top = section.offsetTop;
-            const height = section.offsetHeight;
-            const id = section.getAttribute('id');
-            const link = document.querySelector(`.nav-link[href="#${id}"]`);
-
-            if (link) {
-                if (scrollPos >= top && scrollPos < top + height) {
-                    document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
-                    link.classList.add('active');
-                }
-            }
-        });
+        // This function is kept for backward compatibility but is no longer needed
+        // Active state is set based on current page URL in loader.js
     }
 
     // ---- Hero Particles ----
@@ -143,17 +149,41 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
 
-    revealElements.forEach(el => revealObserver.observe(el));
+    revealElements.forEach(el => {
+        revealObserver.observe(el);
+        
+        // Immediately reveal elements that are already in viewport on page load
+        const rect = el.getBoundingClientRect();
+        const isInViewport = rect.top < window.innerHeight && rect.bottom > 0;
+        if (isInViewport) {
+            // Add a small delay for visual effect
+            setTimeout(() => el.classList.add('revealed'), 100);
+        }
+    });
 
     // ---- Skill Bar Animation ----
     const skillBars = document.querySelectorAll('.skill-bar-fill');
 
+    // Immediately fill all skill bars on page load
+    skillBars.forEach(bar => {
+        const width = bar.getAttribute('data-width');
+        if (width) {
+            // Add a small delay for visual effect
+            setTimeout(() => {
+                bar.style.width = width + '%';
+            }, 100);
+        }
+    });
+
+    // Also observe for scroll-triggered animation
     const skillObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 const bar = entry.target;
                 const width = bar.getAttribute('data-width');
-                bar.style.width = width + '%';
+                if (width) {
+                    bar.style.width = width + '%';
+                }
                 skillObserver.unobserve(bar);
             }
         });
@@ -175,7 +205,17 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, { threshold: 0.5 });
 
-    counters.forEach(c => counterObserver.observe(c));
+    counters.forEach(c => {
+        counterObserver.observe(c);
+        
+        // Immediately animate counters that are already visible
+        const rect = c.getBoundingClientRect();
+        const isInViewport = rect.top < window.innerHeight && rect.bottom > 0;
+        if (isInViewport) {
+            const target = parseInt(c.getAttribute('data-count'));
+            setTimeout(() => animateCounter(c, target), 300);
+        }
+    });
 
     function animateCounter(element, target) {
         const duration = 2000;
@@ -247,13 +287,17 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // ---- Smooth scroll for all anchor links ----
+    // ---- Smooth scroll for anchor links (only for same-page navigation) ----
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                target.scrollIntoView({ behavior: 'smooth' });
+            const href = this.getAttribute('href');
+            // Only apply smooth scroll if target exists on current page
+            if (href && href !== '#') {
+                const target = document.querySelector(href);
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
             }
         });
     });

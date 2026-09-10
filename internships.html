@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internships — Amrit Kashyap | Full Stack Developer</title>
+    <meta name="description" content="Explore Amrit Kashyap's internship experience in web development, HR tech, and cybersecurity.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cursor Glow Effect -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>AK<span class="logo-bracket">/&gt;</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="about.html" class="nav-link" data-page="about">About</a></li>
+                <li><a href="skills.html" class="nav-link" data-page="skills">Skills</a></li>
+                <li><a href="projects.html" class="nav-link" data-page="projects">Projects</a></li>
+                <li><a href="internships.html" class="nav-link" data-page="internships">Internships</a></li>
+                <li><a href="achievements.html" class="nav-link" data-page="achievements">Achievements</a></li>
+                <li><a href="contact.html" class="nav-link" data-page="contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </button>
+                <a href="https://github.com/amritupadhyay45" target="_blank" rel="noopener noreferrer" class="nav-github">
+                    <i class="fab fa-github"></i>
+                </a>
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Internships Section -->
+    <section class="section page-content" id="internships">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Experience</span>
+                <h2 class="section-title">My <span class="gradient-text">Internships</span></h2>
+                <p class="section-subtitle">Hands-on industry experience gained through internships in web development, HR tech, and cybersecurity.</p>
+            </div>
+            <div class="internships-grid">
+                <!-- Internship 1: InternPe -->
+                <div class="internship-card reveal-up" onclick="openCertModal('certificates/interpe.png')">
+                    <div class="internship-icon teal">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="internship-content">
+                        <h3>Web Development Intern</h3>
+                        <span class="internship-company">InternPe</span>
+                        <p>Worked on front-end and back-end web development projects. Built responsive UI components, implemented REST APIs, and gained hands-on experience with modern JavaScript frameworks and deployment workflows.</p>
+                        <div class="internship-tags">
+                            <span>HTML/CSS</span>
+                            <span>JavaScript</span>
+                            <span>React</span>
+                            <span>Node.js</span>
+                        </div>
+                    </div>
+                    <div class="internship-view-cert">
+                        <i class="fas fa-certificate"></i> View Certificate
+                    </div>
+                </div>
+
+                <!-- Internship 2: PeopleXM -->
+                <div class="internship-card reveal-up delay-1" onclick="openCertModal('certificates/peoplexm.jpg')">
+                    <div class="internship-icon purple">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="internship-content">
+                        <h3>Software Intern</h3>
+                        <span class="internship-company">PeopleXM</span>
+                        <p>Contributed to HR-tech product development, working on employee experience and feedback platforms. Assisted in building dashboard features, data visualization modules, and integrating analytics tools.</p>
+                        <div class="internship-tags">
+                            <span>Full Stack</span>
+                            <span>Analytics</span>
+                            <span>Dashboard</span>
+                            <span>HR Tech</span>
+                        </div>
+                    </div>
+                    <div class="internship-view-cert">
+                        <i class="fas fa-certificate"></i> View Certificate
+                    </div>
+                </div>
+
+                <!-- Internship 3: CDAC Noida -->
+                <div class="internship-card reveal-up delay-2" onclick="openCertModal('certificates/CDAC.jpg')">
+                    <div class="internship-icon red">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="internship-content">
+                        <h3>Ethical Hacking & Cybersecurity Intern</h3>
+                        <span class="internship-company">C-DAC Noida</span>
+                        <p>Completed a virtual internship focused on ethical hacking and penetration testing. Gained hands-on experience with vulnerability assessment, network security tools, and cybersecurity best practices.</p>
+                        <div class="internship-tags">
+                            <span>Ethical Hacking</span>
+                            <span>Pen Testing</span>
+                            <span>Network Security</span>
+                            <span>Cybersecurity</span>
+                        </div>
+                    </div>
+                    <div class="internship-view-cert">
+                        <i class="fas fa-certificate"></i> View Certificate
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>AK<span class="logo-bracket">/&gt;</span>
+                </div>
+                <p class="footer-text">
+                    Amrit Kashyap — Full Stack Developer & ML Enthusiast from SMVDU, Katra. Building modern web applications and AI-powered solutions.
+                </p>
+                <div class="footer-links">
+                    <a href="about.html">About</a>
+                    <a href="skills.html">Skills</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="internships.html">Internships</a>
+                    <a href="achievements.html">Achievements</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-socials">
+                    <a href="https://github.com/amritupadhyay45" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/amrit-kashyap-b36b1228a" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:amritkashyap3680@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+                <p class="footer-copyright">
+                    &copy; 2026 Amrit Kashyap. All rights reserved. | Built with <span class="heart">&hearts;</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Certificate Modal -->
+    <div class="cert-modal-overlay" id="certModal" onclick="closeCertModal(event)">
+        <div class="cert-modal">
+            <button class="cert-modal-close" onclick="closeCertModal(event)" aria-label="Close">&times;</button>
+            <img id="certModalImg" src="" alt="Certificate">
+        </div>
+    </div>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>

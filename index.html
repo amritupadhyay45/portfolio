@@ -18,16 +18,16 @@
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <a href="#hero" class="nav-logo">
+            <a href="index.html" class="nav-logo">
                 <span class="logo-bracket">&lt;</span>AK<span class="logo-bracket">/&gt;</span>
             </a>
             <ul class="nav-links" id="navLinks">
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#internships" class="nav-link">Internships</a></li>
-                <li><a href="#achievements" class="nav-link">Achievements</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="about.html" class="nav-link" data-page="about">About</a></li>
+                <li><a href="skills.html" class="nav-link" data-page="skills">Skills</a></li>
+                <li><a href="projects.html" class="nav-link" data-page="projects">Projects</a></li>
+                <li><a href="internships.html" class="nav-link" data-page="internships">Internships</a></li>
+                <li><a href="achievements.html" class="nav-link" data-page="achievements">Achievements</a></li>
+                <li><a href="contact.html" class="nav-link" data-page="contact">Contact</a></li>
             </ul>
             <div class="nav-actions">
                 <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
@@ -61,15 +61,15 @@
             </h1>
             <p class="hero-subtitle animate-fade-in-up delay-1">
                 I'm Amrit Kashyap — a <strong>Computer Science student</strong> and <strong>full-stack developer</strong> 
-                at SMVDU. I build <a href="#projects">modern web applications</a> and 
-                <a href="#projects">AI-powered solutions</a> using the MERN stack and machine learning.
+                at SMVDU. I build <a href="/projects.html">modern web applications</a> and 
+                <a href="projects.html">AI-powered solutions</a> using the MERN stack and machine learning.
             </p>
             <div class="hero-cta animate-fade-in-up delay-2">
-                <a href="#projects" class="btn btn-primary">
+                <a href="projects.html" class="btn btn-primary">
                     <span>See My Projects</span>
                     <i class="fas fa-arrow-right"></i>
                 </a>
-                <a href="#contact" class="btn btn-outline">
+                <a href="contact.html" class="btn btn-outline">
                     <span>Get In Touch</span>
                     <i class="fas fa-paper-plane"></i>
                 </a>
@@ -92,15 +92,15 @@
                 </div>
             </div>
         </div>
-        <a href="#about" class="scroll-indicator">
+        <a href="#highlights" class="scroll-indicator">
             <div class="mouse">
                 <div class="wheel"></div>
             </div>
         </a>
     </section>
 
-    <!-- About Section -->
-    <section class="section" id="about">
+    <!-- Highlights Section -->
+    <section class="section section-alt" id="highlights">
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">About Me</span>
@@ -125,11 +125,12 @@
                     <p>
                         A <strong>Computer Science Engineering student</strong> with a strong foundation in 
                         <strong>Web Development</strong> and <strong>Machine Learning</strong>. Currently pursuing 
-                        B.Tech at <strong>Shri Mata Vaishno Devi University</strong>, Katra with a CGPA of 7.34.
+                        B.Tech at <strong>Shri Mata Vaishno Devi University</strong>, Katra with a CGPA of 7.16.
                     </p>
                     <p>
                         Experienced in building full-stack applications using the <strong>MERN stack</strong> and 
-                        developing ML-based solutions. with a keen interest in AI and real-world problem solving.
+                        developing ML-based solutions. Certified in <strong>Oracle Cloud Infrastructure (OCI)</strong> 
+                        with a keen interest in AI and real-world problem solving.
                     </p>
                     <p>
                         Passionate about learning, building <strong>scalable systems</strong>, and contributing to 
@@ -161,7 +162,7 @@
                             <i class="fas fa-chart-line"></i>
                             <div>
                                 <span class="info-label">CGPA</span>
-                                <span class="info-value">7.34</span>
+                                <span class="info-value">7.16</span>
                             </div>
                         </div>
                     </div>
@@ -183,323 +184,69 @@
                 <p class="section-subtitle">I specialize in full-stack web development, AI/ML, and building scalable digital solutions using modern frameworks and tools.</p>
             </div>
 
-            <div class="skills-grid">
-                <!-- Frontend -->
-                <div class="skill-card reveal-up">
-                    <div class="skill-card-header">
-                        <div class="skill-icon frontend-icon">
-                            <i class="fas fa-palette"></i>
-                        </div>
-                        <h3>Frontend</h3>
+            <div class="highlights-grid">
+                <!-- About Preview -->
+                <a href="about.html" class="highlight-card reveal-up">
+                    <div class="highlight-icon" style="background: rgba(108, 99, 255, 0.15); color: #6c63ff;">
+                        <i class="fas fa-user"></i>
                     </div>
-                    <div class="skill-bars">
-                        <div class="skill-bar-item">
-                            <div class="skill-bar-info">
-                                <span>HTML/CSS</span><span>90%</span>
-                            </div>
-                            <div class="skill-bar"><div class="skill-bar-fill" data-width="90"></div></div>
-                        </div>
-                        <div class="skill-bar-item">
-                            <div class="skill-bar-info">
-                                <span>JavaScript</span><span>85%</span>
-                            </div>
-                            <div class="skill-bar"><div class="skill-bar-fill" data-width="85"></div></div>
-                        </div>
-                        <div class="skill-bar-item">
-                            <div class="skill-bar-info">
-                                <span>React</span><span>80%</span>
-                            </div>
-                            <div class="skill-bar"><div class="skill-bar-fill" data-width="80"></div></div>
-                        </div>
-                        <div class="skill-bar-item">
-                            <div class="skill-bar-info">
-                                <span>Tailwind CSS</span><span>75%</span>
-                            </div>
-                            <div class="skill-bar"><div class="skill-bar-fill" data-width="75"></div></div>
-                        </div>
+                    <h3>About Me</h3>
+                    <p>Learn about my background, education, and journey as a Computer Science student and developer at SMVDU.</p>
+                    <div class="highlight-cta">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
                     </div>
-                </div>
+                </a>
 
-                <!-- Backend -->
-                <div class="skill-card reveal-up delay-1">
-                    <div class="skill-card-header">
-                        <div class="skill-icon backend-icon">
-                            <i class="fas fa-server"></i>
-                        </div>
-                        <h3>Backend</h3>
-                    </div>
-                    <div class="skill-bars">
-                        <div class="skill-bar-item">
-                            <div class="skill-bar-info">
-                                <span>Node.js</span><span>80%</span>
-                            </div>
-                            <div class="skill-bar"><div class="skill-bar-fill" data-width="80"></div></div>
-                        </div>
-                        <div class="skill-bar-item">
-                            <div class="skill-bar-info">
-                                <span>Express.js</span><span>78%</span>
-                            </div>
-                            <div class="skill-bar"><div class="skill-bar-fill" data-width="78"></div></div>
-                        </div>
-                        <div class="skill-bar-item">
-                            <div class="skill-bar-info">
-                                <span>MongoDB</span><span>75%</span>
-                            </div>
-                            <div class="skill-bar"><div class="skill-bar-fill" data-width="75"></div></div>
-                        </div>
-                        <div class="skill-bar-item">
-                            <div class="skill-bar-info">
-                                <span>Python / Flask</span><span>70%</span>
-                            </div>
-                            <div class="skill-bar"><div class="skill-bar-fill" data-width="70"></div></div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- AI/ML -->
-                <div class="skill-card reveal-up delay-2">
-                    <div class="skill-card-header">
-                        <div class="skill-icon ml-icon">
-                            <i class="fas fa-brain"></i>
-                        </div>
-                        <h3>AI / ML</h3>
-                    </div>
-                    <div class="skill-bars">
-                        <div class="skill-bar-item">
-                            <div class="skill-bar-info">
-                                <span>Python</span><span>80%</span>
-                            </div>
-                            <div class="skill-bar"><div class="skill-bar-fill" data-width="80"></div></div>
-                        </div>
-                        <div class="skill-bar-item">
-                            <div class="skill-bar-info">
-                                <span>Scikit-learn</span><span>70%</span>
-                            </div>
-                            <div class="skill-bar"><div class="skill-bar-fill" data-width="70"></div></div>
-                        </div>
-                        <div class="skill-bar-item">
-                            <div class="skill-bar-info">
-                                <span>TensorFlow</span><span>60%</span>
-                            </div>
-                            <div class="skill-bar"><div class="skill-bar-fill" data-width="60"></div></div>
-                        </div>
-                        <div class="skill-bar-item">
-                            <div class="skill-bar-info">
-                                <span>PyTorch</span><span>55%</span>
-                            </div>
-                            <div class="skill-bar"><div class="skill-bar-fill" data-width="55"></div></div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Tools -->
-                <div class="skill-card reveal-up delay-3">
-                    <div class="skill-card-header">
-                        <div class="skill-icon tools-icon">
-                            <i class="fas fa-wrench"></i>
-                        </div>
-                        <h3>Tools & Cloud</h3>
-                    </div>
-                    <div class="skill-bars">
-                        <div class="skill-bar-item">
-                            <div class="skill-bar-info">
-                                <span>Git & GitHub</span><span>85%</span>
-                            </div>
-                            <div class="skill-bar"><div class="skill-bar-fill" data-width="85"></div></div>
-                        </div>
-                        <div class="skill-bar-item">
-                            <div class="skill-bar-info">
-                                <span>VS Code</span><span>90%</span>
-                            </div>
-                            <div class="skill-bar"><div class="skill-bar-fill" data-width="90"></div></div>
-                        </div>
-                        <div class="skill-bar-item">
-                            <div class="skill-bar-info">
-                                <span>AWS / Firebase</span><span>60%</span>
-                            </div>
-                            <div class="skill-bar"><div class="skill-bar-fill" data-width="60"></div></div>
-                        </div>
-                        <div class="skill-bar-item">
-                            <div class="skill-bar-info">
-                                <span>Power BI</span><span>65%</span>
-                            </div>
-                            <div class="skill-bar"><div class="skill-bar-fill" data-width="65"></div></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Tech Icons -->
-            <div class="tech-icons reveal-up">
-                <h3>Technologies I Work With</h3>
-                <div class="tech-icons-grid">
-                    <div class="tech-icon-item" title="JavaScript">
-                        <i class="fab fa-js-square"></i>
-                        <span>JavaScript</span>
-                    </div>
-                    <div class="tech-icon-item" title="React">
-                        <i class="fab fa-react"></i>
-                        <span>React</span>
-                    </div>
-                    <div class="tech-icon-item" title="Node.js">
-                        <i class="fab fa-node-js"></i>
-                        <span>Node.js</span>
-                    </div>
-                    <div class="tech-icon-item" title="Python">
-                        <i class="fab fa-python"></i>
-                        <span>Python</span>
-                    </div>
-                    <div class="tech-icon-item" title="Java">
-                        <i class="fab fa-java"></i>
-                        <span>Java</span>
-                    </div>
-                    <div class="tech-icon-item" title="Git">
-                        <i class="fab fa-git-alt"></i>
-                        <span>Git</span>
-                    </div>
-                    <div class="tech-icon-item" title="AWS">
-                        <i class="fab fa-aws"></i>
-                        <span>AWS</span>
-                    </div>
-                    <div class="tech-icon-item" title="Linux">
-                        <i class="fab fa-linux"></i>
-                        <span>Linux</span>
-                    </div>
-                    <div class="tech-icon-item" title="HTML5">
-                        <i class="fab fa-html5"></i>
-                        <span>HTML5</span>
-                    </div>
-                    <div class="tech-icon-item" title="CSS3">
-                        <i class="fab fa-css3-alt"></i>
-                        <span>CSS3</span>
-                    </div>
-                    <div class="tech-icon-item" title="Database">
-                        <i class="fas fa-database"></i>
-                        <span>MongoDB</span>
-                    </div>
-                    <div class="tech-icon-item" title="TypeScript">
+                <!-- Skills Preview -->
+                <a href="skills.html" class="highlight-card reveal-up delay-1">
+                    <div class="highlight-icon" style="background: rgba(0, 217, 255, 0.15); color: #00d9ff;">
                         <i class="fas fa-code"></i>
-                        <span>TypeScript</span>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
+                    <h3>Skills & Technologies</h3>
+                    <p>Explore my expertise in full-stack development, MERN stack, AI/ML, cloud technologies, and modern tools.</p>
+                    <div class="highlight-cta">
+                        <span>View Skills</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </a>
 
-    <!-- Projects Section -->
-    <section class="section" id="projects">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">My Projects</span>
-                <h2 class="section-title">Featured <span class="gradient-text">Work</span></h2>
-                <p class="section-subtitle">Explore my full-stack, AI/ML, and web development projects showcasing real-world problem solving.</p>
-            </div>
+                <!-- Projects Preview -->
+                <a href="projects.html" class="highlight-card reveal-up delay-2">
+                    <div class="highlight-icon" style="background: rgba(0, 230, 118, 0.15); color: #00e676;">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Featured Projects</h3>
+                    <p>Check out my web applications, AI/ML projects, and full-stack solutions built with modern frameworks.</p>
+                    <div class="highlight-cta">
+                        <span>View Projects</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </a>
 
-            <!-- Project Filters -->
-            <div class="project-filters reveal-up">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="web">Web</button>
-                <button class="filter-btn" data-filter="ml">AI/ML</button>
-                <button class="filter-btn" data-filter="fullstack">Full Stack</button>
-            </div>
+                <!-- Internships Preview -->
+                <a href="internships.html" class="highlight-card reveal-up">
+                    <div class="highlight-icon" style="background: rgba(255, 152, 0, 0.15); color: #ff9800;">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Internships</h3>
+                    <p>Discover my hands-on industry experience in web development, HR tech, and cybersecurity domains.</p>
+                    <div class="highlight-cta">
+                        <span>View Experience</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </a>
 
-            <div class="projects-grid">
-                <!-- Project 1: Student Grievance Portal -->
-                <div class="project-card reveal-up" data-category="web fullstack">
-                    <div class="project-image">
-                        <div class="project-image-placeholder gradient-1">
-                            <i class="fas fa-clipboard-list"></i>
-                        </div>
-                        <div class="project-overlay">
-                            <a href="https://student-grievance-portal-frontend.onrender.com/" target="_blank" rel="noopener noreferrer" class="project-link" title="Live Demo">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                            <a href="https://github.com/amritupadhyay45/Student_Grievance_Portal" target="_blank" rel="noopener noreferrer" class="project-link" title="Source Code">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
+                <!-- Achievements Preview -->
+                <a href="achievements.html" class="highlight-card reveal-up delay-1">
+                    <div class="highlight-icon" style="background: rgba(255, 193, 7, 0.15); color: #ffc107;">
+                        <i class="fas fa-trophy"></i>
                     </div>
-                    <div class="project-content">
-                        <h3>Student Grievance Portal</h3>
-                        <p>A web-based platform for students to submit complaints, feedback, and maintenance requests. Features real-time status tracking, automated notifications, and role-based access control.</p>
-                        <div class="project-tags">
-                            <span>React</span>
-                            <span>Node.js</span>
-                            <span>MongoDB</span>
-                            <span>Express</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 2: E-commerce Website -->
-                <div class="project-card reveal-up" data-category="web fullstack">
-                    <div class="project-image">
-                        <div class="project-image-placeholder gradient-2">
-                            <i class="fas fa-shopping-cart"></i>
-                        </div>
-                        <div class="project-overlay">
-                            <a href="https://github.com/amritupadhyay45/E_commerce_website" target="_blank" rel="noopener noreferrer" class="project-link" title="Source Code">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Satvik Electricals E-Commerce</h3>
-                        <p>Full-stack e-commerce website for an electrical and electronics store with product listings, user authentication, cart management, admin controls, and responsive design.</p>
-                        <div class="project-tags">
-                            <span>React</span>
-                            <span>Node.js</span>
-                            <span>MongoDB</span>
-                            <span>Tailwind CSS</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 3: QuizGo -->
-                <div class="project-card reveal-up" data-category="web fullstack">
-                    <div class="project-image">
-                        <div class="project-image-placeholder gradient-3">
-                            <i class="fas fa-question-circle"></i>
-                        </div>
-                        <div class="project-overlay">
-                            <a href="https://github.com/amritupadhyay45/Quizgo" target="_blank" rel="noopener noreferrer" class="project-link" title="Source Code">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>QuizMaster — Secure Quiz App</h3>
-                        <p>Cross-platform Electron quiz application with secure kiosk mode, anti-screenshot protection, teacher quiz authoring, auto-grading, and student quiz taking with real-time timers.</p>
-                        <div class="project-tags">
-                            <span>TypeScript</span>
-                            <span>React</span>
-                            <span>Electron</span>
-                            <span>Supabase</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 4: ChatBot -->
-                <div class="project-card reveal-up" data-category="web ml">
-                    <div class="project-image">
-                        <div class="project-image-placeholder gradient-4">
-                            <i class="fas fa-robot"></i>
-                        </div>
-                        <div class="project-overlay">
-                            <a href="https://github.com/amritupadhyay45/ChatBot_project" target="_blank" rel="noopener noreferrer" class="project-link" title="Source Code">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>AI ChatBot — Gemini Powered</h3>
-                        <p>Intelligent chatbot built with Flask backend, Streamlit frontend, and MongoDB for conversation storage. Integrates Google Gemini API for AI-powered responses.</p>
-                        <div class="project-tags">
-                            <span>Python</span>
-                            <span>Flask</span>
-                            <span>Streamlit</span>
-                            <span>Gemini AI</span>
-                        </div>
+                    <h3>Achievements</h3>
+                    <p>View my certifications, awards, and participation in national-level hackathons like ISRO Antariksh.</p>
+                    <div class="highlight-cta">
+                        <span>View Achievements</span>
+                        <i class="fas fa-arrow-right"></i>
                     </div>
                 </div>
 
@@ -510,7 +257,7 @@
                             <i class="fas fa-heartbeat"></i>
                         </div>
                         <div class="project-overlay">
-                            <a href="https://github.com/amritupadhyay45/Smart-Fall-Detection-System" target="_blank" rel="noopener noreferrer" class="project-link" title="GitHub Profile">
+                            <a href="https://github.com/amritupadhyay45" target="_blank" rel="noopener noreferrer" class="project-link" title="GitHub Profile">
                                 <i class="fab fa-github"></i>
                             </a>
                         </div>
@@ -690,23 +437,11 @@
                             <a href="mailto:amritkashyap3680@gmail.com">amritkashyap3680@gmail.com</a>
                         </div>
                     </div>
-                    <div class="contact-card">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div>
-                            <h4>Phone</h4>
-                            <a href="tel:+917371890326">+91 7371890326</a>
-                        </div>
-                    </div>
-                    <div class="contact-card">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div>
-                            <h4>Location</h4>
-                            <p>SMVDU, Katra, Jammu & Kashmir, India</p>
-                        </div>
+                    <h3>Get In Touch</h3>
+                    <p>Have a project idea or want to collaborate? Let's connect and build something amazing together.</p>
+                    <div class="highlight-cta">
+                        <span>Contact Me</span>
+                        <i class="fas fa-arrow-right"></i>
                     </div>
 
                     <div class="contact-socials">
@@ -725,11 +460,11 @@
                 <form class="contact-form reveal-right" id="contactForm" action="https://formspree.io/f/your-form-id" method="POST">
                     <div class="form-group">
                         <label for="name">Your Name</label>
-                        <input type="text" id="name" name="name" required placeholder="your name " autocomplete="name">
+                        <input type="text" id="name" name="name" required placeholder="John Doe" autocomplete="name">
                     </div>
                     <div class="form-group">
                         <label for="email">Your Email</label>
-                        <input type="email" id="email" name="email" required placeholder="amrit@example.com" autocomplete="email">
+                        <input type="email" id="email" name="email" required placeholder="john@example.com" autocomplete="email">
                     </div>
                     <div class="form-group">
                         <label for="subject">Subject</label>
@@ -759,12 +494,12 @@
                     Amrit Kashyap — Full Stack Developer & ML Enthusiast from SMVDU, Katra. Building modern web applications and AI-powered solutions.
                 </p>
                 <div class="footer-links">
-                    <a href="#about">About</a>
-                    <a href="#skills">Skills</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#internships">Internships</a>
-                    <a href="#achievements">Achievements</a>
-                    <a href="#contact">Contact</a>
+                    <a href="about.html">About</a>
+                    <a href="skills.html">Skills</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="internships.html">Internships</a>
+                    <a href="achievements.html">Achievements</a>
+                    <a href="contact.html">Contact</a>
                 </div>
                 <div class="footer-socials">
                     <a href="https://github.com/amritupadhyay45" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
